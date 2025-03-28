@@ -1,0 +1,81 @@
+#include <stdio.h>
+
+// Define a constant for the separator line to avoid repetition
+#define SEPARATOR "====================================================================\n"
+
+// Function to print a separator line for better formatting
+void printLine() {
+    printf(SEPARATOR);
+}
+
+// Function to print experience in 4-byte binary format
+void printExperience(int years) {
+    printf("Experience | %d years (Binary: %04b)\n", years, years);
+}
+
+int main() {
+    // Print the project title
+    printf("[Magrathea] \u2764\u2764 Project Member Introduction \u2764\u2764\n");
+    printLine();
+    
+    // Print details of each team member
+    
+    // Arthur Dent
+    printf("Name         | Arthur Dent                Gender     | Male\n");
+    printf("Major        | Mechanical Engineering     ");
+    printExperience(15);
+    printf("Role         | Architect                  Skills | C/C++, Java, Spring, Python, Machine Learning/Deep Learning\n");
+    printf("---------------------------------------------------------------------\n");
+    printf("Introduction | I built my career working on various projects in SNS, fintech, HR, and media in Silicon Valley. \n");
+    printf("               Through successes and failures, I have gained insights I want to share with you.\n");
+    printLine();
+    
+    // Kim Youngjin
+    printf("Name         | Kim Youngjin               Gender     | Male\n");
+    printf("Major        | Computer Engineering       ");
+    printExperience(2);
+    printf("Role         | Developer                  Skills | C#, Python, JavaScript, React, Kotlin\n");
+    printf("---------------------------------------------------------------------\n");
+    printf("Introduction | Recently, I found immense passion for software development through a personal asset\n");
+    printf("               management project using the MAUI framework. Solving real-world problems with my code is incredible!\n");
+    printf("               Successfully developing Magrathea has now become one of my bucket list goals.\n");
+    printLine();
+    
+    // Im Woncheol
+    printf("Name         | Im Woncheol                Gender     | Male\n");
+    printf("Major        | Electronic Engineering     ");
+    printExperience(1);
+    printf("Role         | DBA                        Skills | Java, PHP, MongoDB, MS SQL, MySQL\n");
+    printf("---------------------------------------------------------------------\n");
+    printf("Introduction | I believe that applications are ultimately about how they handle data. While studying Big Data \n");
+    printf("               courses in university, I developed a deep interest in data platforms. I think the success of this\n");
+    printf("               project depends on data. Just thinking about the data we'll manage in Magrathea already excites me!\n");
+    printLine();
+    
+    // Yoo Goeun
+    printf("Name         | Yoo Goeun                  Gender     | Female\n");
+    printf("Major        | Management Information Systems ");
+    printExperience(1);
+    printf("Role         | Cloud Engineer             Skills | Java, PowerShell, Azure, AWS, GCP\n");
+    printf("---------------------------------------------------------------------\n");
+    printf("Introduction | I worked on a project with Kim Youngjin, where I was responsible for implementing cloud architecture.\n");
+    printf("               During my school years, I became fascinated with cloud computing, particularly Microsoft Azure. \n");
+    printf("               As I delved deeper, I found that understanding other public cloud platforms became much easier. \n");
+    printf("               I am determined to complete Magrathea's cloud architecture with my own hands!\n");
+    printLine();
+    
+    // Seo Hyekyung
+    printf("Name         | Seo Hyekyung               Gender     | Female\n");
+    printf("Major        | Political Science & International Relations ");
+    printExperience(0);
+    printf("Role         | Developer                  Skills | Python, Swift, Kotlin, Node.js, Figma\n");
+    printf("---------------------------------------------------------------------\n");
+    printf("Introduction | While I have worked on many projects as academic assignments, this is my first real-world project\n");
+    printf("               where a company's success is at stake. I am both excited and nervous about whether I can perform well.\n");
+    printf("               When I first heard about the Magrathea project, something inside me told me that this was a project \n");
+    printf("               worth dedicating myself to. Having already heard of Arthur’s reputation through LinkedIn, I feel \n");
+    printf("               honored to be part of this journey.\n");
+    printLine();
+    
+    return 0; // Exit the program successfully
+}
